@@ -56,7 +56,7 @@
          <h2 class="sub_title"><span>오시는길</span></h2>
          <div class="inner">
            <!--map-->
-           <div id="map" style="width: 1000px; height:350px; margin: 50px auto 0;"></div>
+           <div id="map" style="width:1000px; ;height:350px;margin: 50px auto 0; "></div>
            <div class="route">
              <p><strong><h2>강남점</h2></strong><br>
                서울 강남구 강담대로 지하 <strong>396</strong>, 신분당선 지하상가<strong>1</strong><br>
@@ -124,4 +124,28 @@
      </div>
    </footer>
   </div>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c0c11834a3ee7738bd2a050aa0e0ccef"></script>
+<script>
+var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+    mapOption = {
+        center: new kakao.maps.LatLng(37.49793433136406, 127.02743107371221), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+// 마커가 표시될 위치입니다
+var markerPosition  = new kakao.maps.LatLng(37.49793433136406, 127.02743107371221);
+
+// 마커를 생성합니다
+var marker = new kakao.maps.Marker({
+    position: markerPosition
+});
+
+// 마커가 지도 위에 표시되도록 설정합니다
+marker.setMap(map);
+
+// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+// marker.setMap(null);
+</script>
  </body>
