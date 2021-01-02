@@ -1,0 +1,87 @@
+.popup1{
+  position: fixed;
+  top:100px;
+  left:550px;
+  box-shadow: 6px 4px 14px #00000078;
+  a{
+    display: block;
+    img{
+      display: block;
+    }
+  }
+}
+
+.close{
+  display: flex;
+  justify-content:flex-end;
+  background: #00263e;
+  label{
+    color: #adadad;
+  }
+  .btnbox{
+    padding: 0 5px;
+  }
+}
+
+.popup2{
+  position: fixed;
+  top:100px;
+  left:950px;
+  box-shadow: 6px 4px 14px #00000078;
+  a{
+    display: block;
+    img{
+      display: block;
+    }
+  }
+}
+
+//메인페이지
+.mainbanner{
+  height: 550px;
+  background: url('../img/main_banner.jpg') no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  h1{
+    position:relative;
+    margin-left: 40px;
+    top: 100px;
+    color: white;
+    font-size: 55px;
+  }
+}
+
+.ad{
+  height: 150px;
+  background: url('../img/sub_banner2.png') no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  h1{
+    position:relative;
+    margin-left: 40px;
+    top: 100px;
+    color: white;
+    font-size: 55px;
+  }
+}
+
+#sale.box.items_2{
+  display: flex;
+  justify-content: space-between;
+  #sale_items.items{
+    box-sizing: border-box;
+    flex-shrink: 0;
+    font-size: $fontSizeMid;
+    padding: 50px 0;
+    .title{
+      font-size: $titleFontSizeMid;
+    }
+    img{
+      width: 100%;
+      margin-bottom: 15px;
+      display:block;
+    }
+  }
+}
